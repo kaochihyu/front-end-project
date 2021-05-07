@@ -9,6 +9,7 @@ btnHamburger.addEventListener('click', function() {
 
   if (header.classList.contains('open')) { // Close hamburger menu
     header.classList.remove('open');
+    body.classList.remove('noscroll');
     fadeElems.forEach(function(element) {
       element.classList.remove('fade-in');
       element.classList.add('fade-out'); 
